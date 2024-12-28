@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Light Theme (default) */
+body.light {
+    background-color: #fff; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #1c1c1c; /* Dark background */
+    color: #f0f8ff; /* Light text color */
+}
+
+body.dark span {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Styles */
+h1, h2 {
+    color: #ff6f61;
+}
+
+/* Countdown Timer */
+#countdown .timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+#countdown span {
+    display: inline-block;
+    min-width: 60px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+}
+
+body.dark #countdown span {
+    background-color: #444;
+    border-color: #ff8c42;
+}
+
+/* Greeting Section */
+#greeting {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    color: #ff8c42;
+}
+
+/* Wish Submission Form */
+#wish-form {
+    margin: 20px 0;
+}
+
+#wish-input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ffd700;
+    border-radius: 5px;
+}
+
+body.dark #wish-input {
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
+
+#submit-wish {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark #submit-wish {
+    background-color: #2196f3;
+}
+
+/* Wish List */
+#wishes {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#wishes li {
+    background-color: #fff7cc;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark #wishes li {
+    background-color: #444;
+    color: #f0f8ff;
+}
+
+/* Video Gallery */
+#video-gallery video {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #ffd700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark #theme-toggle {
+    background-color: #4caf50;
+    color: white;
+}
+
+
